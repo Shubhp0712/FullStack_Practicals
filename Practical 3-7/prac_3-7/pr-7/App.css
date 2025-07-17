@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+}
+
+.App.content{
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  background: #e38d91;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -200px; /* hidden by default */
+  width: 200px;
+  height: 100%;
+  background: #c7b8e0;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.nav-link {
+  background: #d9d2e9;
+  border: none;
+  padding: 10px 20px;
+  width: 80%;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background: #bca0dc;
+}
+
+.content {
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+}
