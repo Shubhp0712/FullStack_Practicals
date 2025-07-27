@@ -7,7 +7,7 @@ body {
   display: flex;
 }
 
-.App.content{
+.App.content {
   flex: 1;
   padding: 20px;
   background-color: #f0f0f0;
@@ -28,7 +28,8 @@ body {
 .sidebar {
   position: fixed;
   top: 0;
-  left: -200px; /* hidden by default */
+  left: -200px;
+  /* hidden by default */
   width: 200px;
   height: 100%;
   background: #c7b8e0;
